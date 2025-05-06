@@ -1,7 +1,7 @@
 
 ---
 
-## ✅ **Topic 2: HTML Elements & Tags — Full Concept Summary**
+## ✅ **HTML Elements & Tags — Full Concept Summary**
 
 ---
 
@@ -258,7 +258,7 @@ Used inside tags to add more information or behavior
 
 
 
-### ✅ **Subtopic 3: HTML Attributes**
+### ✅ **HTML Attributes**
 
 ---
 
@@ -508,7 +508,7 @@ In this example:
 
 
 
-### ✅ **Subtopic 6: Forms and Input Elements**
+### ✅ **Forms and Input Elements**
 
 Forms are crucial for gathering user input in web applications, like signing up, filling out surveys, and making purchases. In this topic, we’ll explore how to create and use HTML forms and input elements effectively.
 
