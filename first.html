@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-in-One HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    /* Dropdown Button Styling */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #575757;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+    form {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <!-- Dropdown Button -->
+    <div class="dropdown">
+      <a href="#">More</a>
+      <div class="dropdown-content">
+        <a href="#contact">Contact</a>
+        <a href="https://www.example.com" target="_blank">Visit Example</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with an Image -->
+  <section id="home">
+    <h1>Welcome to Our Website!</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Hero Image" width="100%">
+    <p>This is an all-in-one example of HTML with various elements and tags used together.</p>
+  </section>
+
+  <!-- About Section with List -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a web development company offering amazing services. Here’s what we do:</p>
+    <ul>
+      <li>Web Design</li>
+      <li>Web Development</li>
+      <li>SEO Optimization</li>
+    </ul>
+  </section>
+
+  <!-- Services Section with a Table -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <table border="1" cellspacing="0" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Design</td>
+          <td>Beautiful and responsive designs for your website.</td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>Building high-quality websites with modern technologies.</td>
+        </tr>
+        <tr>
+          <td>SEO Optimization</td>
+          <td>Improving your website's visibility on search engines.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="/submit_form" method="POST">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Subscribe to our newsletter
+      </label><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Dropdown in Form -->
+  <section>
+    <h3>Select Your Favorite Service:</h3>
+    <form>
+      <label for="service">Choose a service:</label>
+      <select id="service" name="service">
+        <option value="web_design">Web Design</option>
+        <option value="web_dev">Web Development</option>
+        <option value="seo">SEO Optimization</option>
+      </select>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Web Development Company. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
