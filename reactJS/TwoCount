@@ -1,0 +1,30 @@
+import React, { useState } from 'react';
+
+export default function App() {
+  const [count, setCount] = useState(0);
+  const [showCount, setShowCount] = useState(true);
+
+  const increment = () => setCount(prev => prev + 1);
+  const decrement = () => setCount(prev => prev - 1);
+  const reset = () => setCount(0);
+  const toggleVisibility = () => setShowCount(prev => !prev);
+
+  return (
+    <>
+      <h1>Hello World</h1>
+      <p>Count: {count}</p>
+
+      <button onClick={toggleVisibility}>
+        {showCount ? "Hide Count" : "Show Count"}
+      </button>
+
+      {showCount && (
+        <>
+          <button onClick={increment} title="+1">Incree++</button>
+          <button onClick={decrement} title="-1" disabled={count <= 0}>Decree--</button>
+          <button onClick={reset} title="0">Reset</button>
+        </>
+      )}
+    </>
+  );
+}
