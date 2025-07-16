@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload=function(){
+        document.getElementById("demo").innerHTML=Date();
+        }
+        function sayHello(){
+            console.log("1: console.log before timeout");
+            document.write("2: document.write before timeout <br/>");
+            setTimeout(()=>{
+                console.log("3: console.log inside setTimeOut");
+                document.write("4: document.write inside setTimeOut <br />");
+                alert("5: alert inside setTimeOut");
+            },7000);
+            console.log("6: console.log after timeout setup");
+        }
+    </script>
+    <noscript>
+        Sorry...JAva sCript is needed to go ahead!
+    </noscript>
+</head>
+
+<body>
+    <h1 id="demo">Hello all Today is ...!!</h1>
+    <input type="button" onclick="sayHello()" value="Click Me" />
+</body>
+</html>

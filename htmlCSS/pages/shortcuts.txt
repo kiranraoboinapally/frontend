@@ -1,0 +1,10 @@
+In windows vscode shortcuts
+1.
+! usedd for Bolier code of Dcotype HTML giving head, body, html.
+2.
+Ctrl+/ for commenting out/in Selected Lines of text.
+3.
+Shift+Alt+F for Indenting all the text in a proper way.
+4.
+Ctrl+F to find particular text or anything in it.
+5.
