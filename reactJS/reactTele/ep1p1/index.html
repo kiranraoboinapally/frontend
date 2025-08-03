@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding DOM Manipulation</title>
+</head>
+<body>
+    <div id="root">
+        <!-- Content will be dynamically added here using JavaScript -->
+    </div>
+
+    <script>
+        // --- Example 1: Basic header creation ---
+
+        // Create an <h1> element
+        const mainTitle = document.createElement("h1");
+
+        // Set the text content of the <h1>
+        mainTitle.textContent = "Welcome to Dynamic DOM Manipulation!";
+
+        // Append the <h1> to the #root div
+        document.getElementById("root").appendChild(mainTitle);
+
+        console.log("Main title added to the root element.");
+
+        // Create a separate <h3> element (another heading)
+        const subHeader = document.createElement("h3");
+
+        // Set the text for the <h3>
+        subHeader.textContent = "This is a secondary heading added below the main one.";
+
+        // Append the <h3> to the root (it appears as a sibling to <h1>)
+        document.getElementById("root").appendChild(subHeader);
+    </script>
+
+    <script>
+        // --- Example 2: Nesting content inside a header using a paragraph ---
+
+        // Create a new <h1> element
+        const nestedHeader = document.createElement("h1");
+        nestedHeader.textContent = "JavaScript DOM in Action";
+
+        // Create a <p> to serve as subtext (note: semantically better than nested <h3>)
+        const subParagraph = document.createElement("p");
+
+        // Set the subtext
+        subParagraph.textContent = "This paragraph appears inside the heading visually.";
+
+        // Style the paragraph to make it appear like subtext
+        subParagraph.style.fontSize = "0.6em";
+        subParagraph.style.margin = "0";
+
+        // Append the <p> inside the <h1> (visually nested)
+        nestedHeader.appendChild(subParagraph);
+
+        // Append the entire nested header to the root
+        document.getElementById("root").appendChild(nestedHeader);
+    </script>
+
+</body>
+</html>
