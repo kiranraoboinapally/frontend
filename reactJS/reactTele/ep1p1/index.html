@@ -57,6 +57,68 @@
         // Append the entire nested header to the root
         document.getElementById("root").appendChild(nestedHeader);
     </script>
+    <script>
+    // Create a heading
+    const title = document.createElement("h2");
+    title.textContent = "My Favorite Fruits";
 
+    // Create an unordered list
+    const fruitList = document.createElement("ul");
+
+    // Array of fruits to add as list items
+    const fruits = ["Apple", "Banana", "Cherry", "Mango"];
+
+    // Loop through the fruits and add each to the list
+    fruits.forEach(fruit => {
+        const listItem = document.createElement("li");
+        listItem.textContent = fruit;
+        fruitList.appendChild(listItem);
+    });
+
+    // Append everything to the root
+    const root = document.getElementById("root");
+    root.appendChild(title);
+    root.appendChild(fruitList);
+</script>
+
+<script>
+    // Create a container div
+    const card = document.createElement("div");
+    card.style.border = "1px solid #ccc";
+    card.style.padding = "16px";
+    card.style.width = "300px";
+    card.style.marginTop = "20px";
+    card.style.borderRadius = "8px";
+    card.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
+
+    // Add content to the card
+    const cardTitle = document.createElement("h3");
+    cardTitle.textContent = "User Profile";
+
+    const cardContent = document.createElement("p");
+    cardContent.textContent = "Name: Jane Doe\nRole: Front-End Developer";
+
+    // Append title and content to the card
+    card.appendChild(cardTitle);
+    card.appendChild(cardContent);
+
+    // Append the card to the root
+    document.getElementById("root").appendChild(card);
+</script>
+    <script>
+        // --- Example 3: Adding a button with an event listener ---
+
+        // Create a button element
+        const actionButton = document.createElement("button");
+        actionButton.textContent = "Click Me!";
+
+        // Add an event listener to the button
+        actionButton.addEventListener("click", () => {
+            alert("Button was clicked!");
+        });
+
+        // Append the button to the root
+        document.getElementById("root").appendChild(actionButton);
+    </script>
 </body>
 </html>
