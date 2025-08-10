@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactDOM</title>
+    <link rel="stylesheet" href="App.css" />
+</head>
+<body>
+    <h3>This is above Root</h3>
+    <div id="root">
+        <h1 style="color: royalblue;">
+            Hi There, Its been Replaced by h1 Element in App.js
+        </h1>
+    </div>
+    <h3>This is below Root</h3>
+    <div id="root1"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="./App.js"></script>
+    <!-- App.js is should be after the cdn links of React and ReactDOM othewise it Will cause ERROR. -->
+</body>
+</html>
