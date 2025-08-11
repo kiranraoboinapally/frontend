@@ -1,0 +1,15 @@
+{
+  "name": "reacttele",
+  "version": "1.0.0",
+  "description": "This is My practice course from Namaste React",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kiran",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+// ^caret and ~tilde
+  }
+}
