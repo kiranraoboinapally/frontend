@@ -10,6 +10,5 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.15.4"
-// ^caret and ~tilde
   }
 }
